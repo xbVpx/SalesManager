@@ -1,5 +1,6 @@
 public class SalesManager {
     protected long[] sales;
+
     public SalesManager(long[] sales) {
         this.sales = sales;
     }
@@ -11,17 +12,6 @@ public class SalesManager {
             }
         }
         return max;
-    }
-    public int medium() {
-        int max = 0;
-        int min = (int) sales[0];
-        int medium = 0;
-        for (long sale : sales) {
-            medium += sale;
-            if (sale > max) max = (int) sale;
-            if (sale < min) min = (int) sale;
-        }
-        return medium = (medium - min - max) / (sales.length - 2);
     }
 }
 
