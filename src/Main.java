@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        long [] sales = {125, 386, 465, 789, 366, 984};
+        int [] sales = {125, 386, 465, 789, 366, 984};
         SalesManager salesManager = new SalesManager(sales);
-        System.out.println("Максимальная продажа:" + salesManager.max() +
-                ",средний показатель:" + salesManager.medium());
+        System.out.println("Максимальная продажа:" + salesManager.max() + ",средний показатель:" + salesManager.medium());
     }
 }
